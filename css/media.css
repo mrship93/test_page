@@ -1,40 +1,221 @@
 ﻿
 
 /* Телефоны */
+@media (max-width: 1124px) {
+	.city {
+		width:25%!important;
+		text-align:center;
+	}
+	.logo {
+		width:37%;
+	}
+
+	.social {
+		width:37%;
+	}
+
+	.man {
+		background-position:-10% 40%;
+	}
+
+	.title_desk {
+		width:auto;
+		padding:10%;
+	}
+
+	.green_bg {
+		background-position:60% 20%;
+	}
+
+	.title p {
+		padding-top:0;
+	}
+}
+
+@media (min-width: 1366px) {
+
+.banner {
+	background-size:cover;
+}
+
+.title_desk {
+		width:55%!important;
+		
+	}
+
+
+}
+
+@media (max-width: 960px) {
+
+	.man {
+		background-size:70%;
+	}
+
+	.title_img {
+		width:30%;
+	}
+	.title_desk_border {
+		width:46%;
+		margin-left:0;
+	}
+
+	.title_desk {
+		padding:13%;
+	}
+
+	.item {
+		    width: 26%;
+    float: left;
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 10%;
+	}
+
+	}
+
 @media (max-width: 480px) {
-.wrapper {max-width:320px!important;}
-ul li {display:block;
-	text-align:center;
-	padding-top:2px;}
-ul {width:100%;}
-img {
-	width:320px;
-}
-.left_column {
-	width:100%;
-	float:none;
-}
-.news1 h2 {
-	display:block;
-	width:100%;
+	.logo {
+		width:100%;
+	}
+
+	.header_top div {
+		float:none;
+		width:95%;
+		text-align:center;
+		margin:5% auto;
+	}
+
+	.city {
+		width:90%!important;
+	}
+
+	.search {
+		margin-top:5%;
+	}
+
+	.input_search {
+		width:80%;
+	}
+
+	.menu {
+		height:auto;
+		padding:10px;
+	}
+
+	.menu ul li {
+		text-align:center;
+		display:block;
+		margin:10px 0 10px 0;
+	}
+
+	.menu ul li:nth-child(2) {
+		margin:0;
+	}
+
+	.menu ul li:first-child {
+		margin:0;
+	}
+
+	.banner {
+		height:65px;
+	}
+
+	.man {
+		background:none;
+		height:330px;
+	}
+
+	.choice {
+		width:100%;
+		text-align:center;
+		float:none;
+	}
+
+	.title_img {
+		    height: 200px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    background-size: contain;
+	}
+
+	.title_desk_border {
+		    width: 35%;
+    background-size: contain;
+    /* margin-left: 100px; */
+    margin-top: 30px;
+    width: 100%;
+	}
+
+	.title_desk {
+		    width: auto;
+    padding: 6%;
+	}
+
+	.title_desk p {
+		margin-top:0;
+	}
+
+	.title_p {
+		margin:3% 5% 4% 5%;
+	}
+
+	.title p {
+		padding-top:5%;
+	}
+
+	.lechenie_quest {
+		    right: 0%;
+    top: 0;
+    text-align: right;
+    font-size: 1em;
+    bottom:auto;
+	}
+
+	.lechenie_bg {
+		    height: 120px;
+    background-size: contain;
+	}
+
+	.green_bg ul {
+		    padding: 1% 0 0 15%;
+		    width:85%;
+	}
+
+	.title div {
+		float:none;
+	}
+
+	.item {
+		width: 80%;
+    /* float: left; */
+    height: 100px;
+    margin-left: 5%;
+    margin-top: 15%;
+    padding-bottom:30%;
+	}
+
+	.plan h2 {
+		padding-top:12%;
+	}
+
+	.plan_p {
+		padding-top:12%;
+	}
+
+	.select {
+		margin-top:12%;
+	}
+	.plan {
+		height:auto;
+	}
 }
 
-.news1 {
-	text-align:center;
-	width:100%;
-}
-.right_column {
-	width:100%;
-	float:none;
-	text-align:center;
-}
-
-figcaption {
-	width:300px;
-}
-.hidden_img {display:none;}
-
-.comm {background-image:none;}
-
-nav {width:100%;}
-}
+	@media (min-width: 360px) and (max-width:480px) {
+		.title_desk {padding:13%;}
+		.lechenie_bg{height:180px;}
+			.city {
+		width:75%!important;
+	}
+	}
