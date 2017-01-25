@@ -1,0 +1,216 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link href="css/reset.css"	rel="stylesheet" type="text/css">
+		<link href="css/style.css"	rel="stylesheet" type="text/css">
+		<link href="css/media.css"	rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+		<title>Тестовое задание</title>
+		
+	
+	</head>
+	
+	
+	<body>
+		<script type="text/javascript">
+    function setEqualHeight(columns) {
+        var tallestcolumn = 0;
+        columns.each(
+        function() {
+            currentHeight = $(this).height();
+            if(currentHeight > tallestcolumn) {
+             tallestcolumn = currentHeight;
+            }
+        }
+        );
+        columns.height(tallestcolumn);
+    }
+    $(document).ready(function() {
+     setEqualHeight($(".item p"));
+    });
+</script>
+
+		<div class="wrapper clearfix ">
+			<header >
+				<div class="header_top clearfix ">
+					<div class="logo">
+						<img src="img/logo.png" width="250" height="50">
+					</div>
+					<div class="city">
+						<p>
+							<img src="img/map.png" width="20" height="26">
+							<span>
+							Выберите город и регион
+							</span>
+							<span>
+							<a href="#">Санкт-Петербург
+								<img src="img/down.png" width="12" height="10"> 
+							</span>
+							</a>
+						</p>
+					</div>
+					<div class="social ">
+						<ul>
+							<li><img src="img/fb.png" width="31" height="30px"></li>
+							<li><img src="img/tw.png" width="31" height="30px"></li>
+							<li><img src="img/vk.png" width="31" height="30px"></li>
+							<li><img src="img/ok.png" width="31" height="30px"></li>
+							<li><img src="img/you.png" width="31" height="30px"></li>
+							<li><img src="img/inst.png" width="31" height="30px"></li>
+						</ul>
+					
+					</div>
+				</div>
+
+				<nav class="">
+					<div class="search  ">
+						<div class="input_search">
+							<input type="text">
+							<div class="search_btn">
+								<input type="image" src="img/search.png">
+							</div>
+						</div>
+					</div>
+					<div class="menu">
+						
+						<ul>
+							<li>
+								<a href="#"><img src="img/home.png" width="38" height="28"></a>
+							</li>
+							<li>
+								<a href="#">Новости</a></li>
+							<li><a href="#">Статьи</a></li>
+							<li><a href="#">Клиника</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Разделы медицины</a></li>
+							<li><a href="#">Вопрос-ответ</a></li>
+						</ul>
+					</div>
+				
+				</nav>
+				<div class="banner">
+					
+				</div>
+
+				<div class="bradcrumbs">
+					Главная > Питание
+				</div>
+			
+
+
+			</header>
+
+			<section class="bol clearfix">
+				<p>Нажмите на беспокоющую Вас область, чтобы мы могли вам помочь</p>
+				<div class="man">
+					<div class="choice">
+							<p>Органы брюшной полости:</p>
+					<ul>
+						<li>Надпочечники</li>
+						<li>Почки</li>
+						<li>Желчный пузырь</li>
+						<li>Мочеточник</li>
+						<li>Печень</li>
+						<li>Селезенка</li>
+						<li>Желудочно-кишечный тракт</li>
+
+					</ul>
+					<p class="choice_text">Спереди и с боков их расположение ограничивает брюшная 
+стенка, пронизанная мышцами, жировой клетчаткой и соеди-
+нительнотканными образованиями. За кровоснабжение отве-
+чают кровеносные сосуды</p>
+				
+					</div>
+			
+				</div>
+			</section>
+		</div>
+
+		<section class="title clearfix">
+			
+			
+				<p class="title_p">Определение:</p>
+
+				<div class="title_img">
+				</div>
+				<div class="title_desk_border">
+				<div class="title_desk">
+					<h3>Печень</h3>
+					<p>(лат. jecur, jecor, hepar, др.-греч.) 
+— жизненно важная железа внешней 
+секреции позвоночных животных, в 
+том числе и человека, находящаяся 
+в брюшной полости (полости живота) 
+под диафрагмой и выполняющая 
+большое количество различных фи-
+зиологических функций. Печень явля-
+ется самой крупной железой позво-
+ночных.</p>
+
+				</div>
+			</div>
+			
+
+		</section>
+
+		<section class="lechenie">
+			<p class="title_p">Лечение:</p>
+			<div class="lechenie_bg">
+				<div class="lechenie_quest">
+					К какому врачу<br> обратиться
+				</div>
+				<div class="prev">
+					<a href="#"><img src="img/left.png"></a>
+				</div>
+				<div class="next">
+					<a href="#"><img src="img/right.png"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="green">
+				<p class="title_p">Сопутствующие заболевания:</p>
+			<div class="green_bg">
+				<ul>
+					<li><a href="#">Психосоматика сахарного диабета</a></li>
+					<li><a href="#">Течение гепатита при сахарном диабете</a></li>
+					<li><a href="#">Развитие рака при диабете</a></li>
+					<li><a href="#">Особенности инсульта при сахарном диабете</a></li>
+					<li><a href="#">Причины возникновения метаболического синдрома</a></li>
+					<li><a href="#">Влияние атеросклероза на течение диабета</a></li>
+					<li><a href="#">Особенности лечения переломов при диабете</a></li>
+				</ul>
+		
+			</div>
+
+		</section>
+
+
+		<section class="plan">
+			<h2>Ваш индивидуальный план питания</h2>
+		</section>
+
+
+
+
+
+
+
+		
+	
+
+
+			
+	
+
+
+
+	</body>
+		
+		
+		
+</html>

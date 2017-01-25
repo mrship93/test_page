@@ -1,0 +1,40 @@
+﻿
+
+/* Телефоны */
+@media (max-width: 480px) {
+.wrapper {max-width:320px!important;}
+ul li {display:block;
+	text-align:center;
+	padding-top:2px;}
+ul {width:100%;}
+img {
+	width:320px;
+}
+.left_column {
+	width:100%;
+	float:none;
+}
+.news1 h2 {
+	display:block;
+	width:100%;
+}
+
+.news1 {
+	text-align:center;
+	width:100%;
+}
+.right_column {
+	width:100%;
+	float:none;
+	text-align:center;
+}
+
+figcaption {
+	width:300px;
+}
+.hidden_img {display:none;}
+
+.comm {background-image:none;}
+
+nav {width:100%;}
+}
