@@ -1,221 +1,59 @@
 ﻿
 
 /* Телефоны */
-@media (max-width: 1124px) {
-	.city {
-		width:25%!important;
-		text-align:center;
+@media (max-width: 1280px) {
+	.contain {
+		width:95%;
 	}
-	.logo {
-		width:37%;
+	footer {
+		width:1000px;
 	}
-
-	.social {
-		width:37%;
-	}
-
-	.man {
-		background-position:-10% 40%;
-	}
-
-	.title_desk {
-		width:auto;
-		padding:10%;
-	}
-
-	.green_bg {
-		background-position:60% 20%;
-	}
-
-	.title p {
-		padding-top:0;
+	.footer_item {
+		width:230px;
+		margin-left:20px;
 	}
 }
 
-@media (min-width: 1366px) {
-
-.banner {
-	background-size:cover;
-}
-
-.title_desk {
-		width:55%!important;
-		
+@media (min-width: 1600px) {
+	.contain {
+		width:65%;
 	}
-
-
+	.nav ul li:first-child {
+		margin-top:-8px;
+	}
 }
 
 @media (max-width: 960px) {
-
-	.man {
-		background-size:70%;
-	}
-
-	.title_img {
-		width:30%;
-	}
-	.title_desk_border {
-		width:46%;
-		margin-left:0;
-	}
-
-	.title_desk {
-		padding:13%;
-	}
-
-	.item {
-		    width: 26%;
-    float: left;
-    height: 100px;
-    margin-left: 5%;
-    margin-top: 10%;
-	}
-
-	}
-
-@media (max-width: 480px) {
-	.logo {
-		width:100%;
-	}
-
-	.header_top div {
-		float:none;
-		width:95%;
-		text-align:center;
-		margin:5% auto;
-	}
-
-	.city {
-		width:90%!important;
-	}
-
-	.search {
-		margin-top:5%;
-	}
-
-	.input_search {
-		width:80%;
-	}
-
-	.menu {
-		height:auto;
-		padding:10px;
-	}
-
-	.menu ul li {
-		text-align:center;
-		display:block;
-		margin:10px 0 10px 0;
-	}
-
-	.menu ul li:nth-child(2) {
-		margin:0;
-	}
-
-	.menu ul li:first-child {
-		margin:0;
-	}
-
-	.banner {
-		height:65px;
-	}
-
-	.man {
-		background:none;
-		height:330px;
-	}
-
-	.choice {
-		width:100%;
-		text-align:center;
-		float:none;
-	}
-
-	.title_img {
-		    height: 200px;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
-    background-size: contain;
-	}
-
-	.title_desk_border {
-		    width: 35%;
-    background-size: contain;
-    /* margin-left: 100px; */
-    margin-top: 30px;
-    width: 100%;
-	}
-
-	.title_desk {
-		    width: auto;
-    padding: 6%;
-	}
-
-	.title_desk p {
-		margin-top:0;
-	}
-
-	.title_p {
-		margin:3% 5% 4% 5%;
-	}
-
-	.title p {
-		padding-top:5%;
-	}
-
-	.lechenie_quest {
-		    right: 0%;
-    top: 0;
-    text-align: right;
-    font-size: 1em;
-    bottom:auto;
-	}
-
-	.lechenie_bg {
-		    height: 120px;
-    background-size: contain;
-	}
-
-	.green_bg ul {
-		    padding: 1% 0 0 15%;
-		    width:85%;
-	}
-
-	.title div {
-		float:none;
-	}
-
-	.item {
-		width: 80%;
-    /* float: left; */
-    height: 100px;
-    margin-left: 5%;
-    margin-top: 15%;
-    padding-bottom:30%;
-	}
-
-	.plan h2 {
-		padding-top:12%;
-	}
-
-	.plan_p {
-		padding-top:12%;
-	}
-
-	.select {
-		margin-top:12%;
-	}
-	.plan {
-		height:auto;
-	}
+	.contain{width:100%;}
+	.nav{width:100%;}
+	.form ul li {margin-right:0px;}
+	.btn {margin-left:10px;}
+	.del_button{width:21%;margin-left:5px;}
+	.del_red{background:none;}
+	footer{width:800px;}
+	.footer_item{width:180px;}
 }
 
-	@media (min-width: 360px) and (max-width:480px) {
-		.title_desk {padding:13%;}
-		.lechenie_bg{height:180px;}
-			.city {
-		width:75%!important;
+
+
+@media (min-width: 320px) and (max-width:680px) {
+	.header{height:auto;text-align:center;}
+	.nav ul li {display:block; margin:5%; padding-bottom:5%;}
+	.contain{text-align:center;}
+	.form ul {height:auto;}
+	.form ul li {
+		display:block;margin:5%;padding:3% 0 3% 0;
 	}
-	}
+	.form ul li:last-child{background:none;}
+	.title {float:none;margin-left:0px;}
+	.title_input{width:100%;}
+	.city_input{width:100%;}
+	.date, .time, .guest, .price, .rating, .top, .type, .del_button {width:100%;}
+	.choise_form:nth-child(5){margin-left:0px;}
+	footer{width:100%;}
+	.contact{text-align:left;}
+	.develop{margin:30px 0 0 0;text-align:center;}
+	.city_input{padding:15px 0 15px 0;}
+	.choise_form_input{padding:15px 0 15px 0;}
+	.btn{width:100%;}
+}

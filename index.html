@@ -1,296 +1,287 @@
-﻿<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<link href="css/reset.css"	rel="stylesheet" type="text/css">
-		<link href="css/style.css"	rel="stylesheet" type="text/css">
-		<link href="css/media.css"	rel="stylesheet" type="text/css">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-		<title>Тестовое задание</title>
-		
-	
-	</head>
-	
-	
-	<body>
-		<script type="text/javascript">
-    function setEqualHeight(columns) {
-        var tallestcolumn = 0;
-        columns.each(
-        function() {
-            currentHeight = $(this).height();
-            if(currentHeight > tallestcolumn) {
-             tallestcolumn = currentHeight;
-            }
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.barrating.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <link href="css/jquery-ui.css" type="text/css" rel="stylesheet">
+    <link href="css/reset.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fontawesome-stars.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="css/datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.formstyler.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <script>
+      $(function() {$('#example').barrating({theme: 'fontawesome-stars'});});
+      
+    </script>
+    <script>
+      $(document).ready(function() {
+      $("#add").toggle(function() {
+      $(".add_country_block").fadeIn(); 
+      return false; },
+      function() { 
+      $(".add_country_block").fadeOut(); 
+      return false; 
+      });
+      $("html").on("click", "body", function(){
+      $(".add_country_block").fadeOut();
+      });
+      });
+      
+    </script>
+    <script>
+      $(document).ready(function() {
+      $("#top_hotels").toggle(function() {
+      $(".top_hotels_block").fadeIn(); 
+      return false; },
+      function() { 
+      $(".top_hotels_block").fadeOut(); 
+      return false; 
+      });
+      $("html").on("click", "body", function(){
+      $(".top_hotels_block").fadeOut();
+      });
+      }); 
+      
+    </script>
+    <script>
+      $(document).ready(function() {
+      $("html").on("click", ".add_country_block .tai_add, .add_country_block .viet_add, .add_country_block .ind_add", function(){
+      $(this).appendTo(".country");
+      return false;
+      });
+      
+      $("html").on("click", ".country .tai_add, .country .viet_add, .country .ind_add", function()
+      {
+      $(this).appendTo(".add_country_block");
+      
+      return false;
+      });
+      });
+      
+    </script>
+    <script>
+      $(document).ready(function(){
+        $( "#slider" ).slider({value : 0,min : 0,max : 5,step : 0.1,create: function( event, ui ) 
+        {val = $( "#slider" ).slider("value");
+        $( "#contentSlider" ).html( val );},
+        slide: function( event, ui ) 
+        {
+        $( "#contentSlider" ).html( ui.value );
+        if (ui.value < 3) { 
+        	$( "#contentSlider, .top_hotels_icon" ).removeClass("top_hotels_yellow").addClass("top_hotels_red");
+        	}
+         if (ui.value > 3) { 
+        	$( "#contentSlider, .top_hotels_icon" ).removeClass("top_hotels_red").addClass("top_hotels_yellow");
+        	}
+        	 if (ui.value >= 4) { 
+        	$( "#contentSlider, .top_hotels_icon" ).removeClass("top_hotels_yellow").addClass("top_hotels_green");
+        	}
+        
+      
         }
-        );
-        columns.height(tallestcolumn);
-    }
-    $(document).ready(function() {
-     setEqualHeight($(".item_bg"));
-    });
-</script>
-
-		<div class="wrapper clearfix ">
-			<header >
-				<div class="header_top clearfix ">
-					<div class="logo">
-						<img alt="" src="img/logo.png" width="250" height="50">
-					</div>
-					<div class="city">
-						<p>
-							<img alt="" src="img/map.png" width="20" height="26">
-							<span>
-							Выберите город и регион
-							</span>
-							<span>
-							<a href="#">Санкт-Петербург
-								<img alt="" src="img/down.png" width="12" height="10"> 
-							
-							</a>
-							</span>
-						</p>
-					</div>
-					<div class="social ">
-						<ul>
-							<li><img alt="" src="img/fb.png" width="31" height="30"></li>
-							<li><img alt="" src="img/tw.png" width="31" height="30"></li>
-							<li><img alt="" src="img/vk.png" width="31" height="30"></li>
-							<li><img alt="" src="img/ok.png" width="31" height="30"></li>
-							<li><img alt="" src="img/you.png" width="31" height="30"></li>
-							<li><img alt="" src="img/inst.png" width="31" height="30"></li>
-						</ul>
-					
-					</div>
-				</div>
-
-				<nav class="">
-					<div class="search  ">
-						<div class="input_search">
-							<input type="text">
-							<div class="search_btn">
-								<input type="image" src="img/search.png">
-							</div>
-						</div>
-					</div>
-					<div class="menu">
-						
-						<ul>
-							<li>
-								<a href="#"><img alt="" src="img/home.png" width="38" height="28"></a>
-							</li>
-							<li>
-								<a href="#">Новости</a></li>
-							<li><a href="#">Статьи</a></li>
-							<li><a href="#">Клиника</a></li>
-							<li><a href="#">Контакты</a></li>
-							<li><a href="#">Разделы медицины</a></li>
-							<li><a href="#">Вопрос-ответ</a></li>
-						</ul>
-					</div>
-				
-				</nav>
-				<div class="banner">
-					
-				</div>
-
-				<div class="bradcrumbs">
-					Главная > Питание
-				</div>
-			
-
-
-			</header>
-
-			<div class="bol clearfix">
-				<p>Нажмите на беспокоющую Вас область, чтобы мы могли вам помочь</p>
-				<div class="man">
-					<div class="choice">
-							<p>Органы брюшной полости:</p>
-					<ul>
-						<li>Надпочечники</li>
-						<li>Почки</li>
-						<li>Желчный пузырь</li>
-						<li>Мочеточник</li>
-						<li>Печень</li>
-						<li>Селезенка</li>
-						<li>Желудочно-кишечный тракт</li>
-
-					</ul>
-					<p class="choice_text">Спереди и с боков их расположение ограничивает брюшная 
-стенка, пронизанная мышцами, жировой клетчаткой и соеди-
-нительнотканными образованиями. За кровоснабжение отве-
-чают кровеносные сосуды</p>
-				
-					</div>
-			
-				</div>
-			</div>
-		</div>
-
-		<section class="title clearfix">
-			
-			
-				<p class="title_p">Определение:</p>
-
-				<div class="title_img">
-				</div>
-				<div class="title_desk_border">
-				<div class="title_desk">
-					<h3>Печень</h3>
-					<p>(лат. jecur, jecor, hepar, др.-греч.) 
-— жизненно важная железа внешней 
-секреции позвоночных животных, в 
-том числе и человека, находящаяся 
-в брюшной полости (полости живота) 
-под диафрагмой и выполняющая 
-большое количество различных фи-
-зиологических функций. Печень явля-
-ется самой крупной железой позво-
-ночных.</p>
-
-				</div>
-			</div>
-			
-
-		</section>
-
-		<div class="lechenie">
-			<p class="title_p">Лечение:</p>
-			<div class="lechenie_bg">
-				<div class="lechenie_quest">
-					
-						К какому врачу<br> обратиться
-					
-					
-				</div>
-				<div class="prev">
-					<a href="#"><img alt="" src="img/left.png"></a>
-				</div>
-				<div class="next">
-					<a href="#"><img alt="" src="img/right.png"></a>
-				</div>
-			</div>
-		</div>
-
-		<div class="green">
-				<p class="title_p">Сопутствующие заболевания:</p>
-			<div class="green_bg">
-				<ul>
-					<li><a href="#">Психосоматика сахарного диабета</a></li>
-					<li><a href="#">Течение гепатита при сахарном диабете</a></li>
-					<li><a href="#">Развитие рака при диабете</a></li>
-					<li><a href="#">Особенности инсульта при сахарном диабете</a></li>
-					<li><a href="#">Причины возникновения метаболического синдрома</a></li>
-					<li><a href="#">Влияние атеросклероза на течение диабета</a></li>
-					<li><a href="#">Особенности лечения переломов при диабете</a></li>
-				</ul>
-		
-			</div>
-
-		</div>
-
-
-		<div class="plan clearfix">
-			<h2>Ваш индивидуальный план питания</h2>
-			<p class="plan_p">Выберите интересующий Вас раздел и получите меню питания прямо сейчас</p>
-			<div class="select">
-				<select>
-					<option>Меню для диабетика</option>
-				</select>
-				<button>Показать питание</button>
-			</div>
-			<div class="item">
-					<h3>Завтрак</h3>
-					<div class="item_bg">
-						<div class="item_img"></div>
-						<ul >
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-						</ul>
-					</div>
-				</div>
-			<div class="item">
-					<h3>2 Завтрак</h3>
-					<div class="item_bg">
-						<div class="item_img"></div>
-						<ul >
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							
-						</ul>
-					</div>
-			</div>
-			<div class="item">
-					<h3>Обед</h3>
-					<div class="item_bg">
-						<div class="item_img"></div>
-						<ul >
-						<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							
-						</ul>
-					</div>
-			</div>
-			<div class="item">
-					<h3>Полдник</h3>
-					<div class="item_bg">
-						<div class="item_img"></div>
-						<ul >
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							
-						</ul>
-					</div>
-			</div>
-			<div class="item">
-					<h3>Ужин</h3>
-					<div class="item_bg">
-						<div class="item_img"></div>
-						<ul >
-							<li>1</li>
-							<li>2</li>
-							<li>3</li>
-							<li>4</li>
-							
-						</ul>
-					</div>
-			</div>
-			<div class="item">
-				<a href="#"><img alt="" src="img/next_day.png" width="120" height="120"></a>
-				<p class="next_day">Следующий день ></p>
-			</div>
-			
-		</div>
-
-
-
-
-
-
-
-		
-	
-
-
-			
-	
-
-
-
-	</body>
-		
-		
-		
+      
+        });
+         	
+        
+      	    
+        	
+        	
+        });
+      
+      
+    </script>
+    <header class="header">
+      <nav class="nav">
+        <ul>
+          <li><a href="#"> <img src="img/logo.png"></a></li>
+          <li><a href="#">Моя лента</a></li>
+          <li> <a href="#">Интересы</a></li>
+          <li> <a href="#">Направления</a></li>
+          <li><a href="#">Подбор тура</a></li>
+          <li><a href="#">Заявка</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="contain">
+        <h1>Настройки интересов</h1>
+        <div class="form">
+          <nav class="menu_form">
+            <ul>
+              <li><a href="#">Подборка Васи</a></li>
+              <li><a href="#">Подборка 123</a></li>
+              <li><a href="#">Турция 20.03</a></li>
+              <li><a href="#">Подборка #1</a></li>
+              <li><a href="#">Добавить подборку</a></li>
+            </ul>
+          </nav>
+          <form>
+            <div class="city clearfix">
+              <div class="title">
+                <label>Название подборки <br>
+                  <input class="title_input city_input" type="text" id="name">
+                </label>
+              </div>
+              <div class="title our_city">
+                <label>Ваш город <br>
+                  <input class="title_city city_input our_city_input" type="search">
+                </label>
+              </div>
+              <div class="title btn"><a href="#">Смотреть результаты</a>
+                <div class="arrow"></div>
+              </div>
+            </div>
+            <p class="title_country">Вы можете задать несколько стран или регионов для одной подборки</p>
+            <div class="country">
+              <p>Юго-Восточная Азия</p>
+            </div>
+            <div class="add_btn">
+              <button class="add_reg" id="add2">ДОБАВИТЬ РЕГИОН</button>
+              <button class="add_country" id="add">ДОБАВИТЬ СТРАНЫ</button>
+              <div class="add_country_block">
+                <div class="country_item tai_add"><a href="#" id="tai_add">Таиланд</a>
+                  <div class="del"><a href="#" id="del"></a></div>
+                  <div class="icon icon_tai"></div>
+                </div>
+                <div class="country_item viet_add"><a href="#" id="viet_add">Вьетнам</a>
+                  <div class="del"><a href="#" id="del"></a></div>
+                  <div class="icon icon_viet"></div>
+                </div>
+                <div class="country_item ind_add"><a href="#" id="ind_add">Индонезия</a>
+                  <div class="del"><a href="#" id="del"></a></div>
+                  <div class="icon icon_ind"></div>
+                </div>
+              </div>
+              <div class="add_reg_block">
+                <div class="country_item">Таиланд
+                  <div class="del"><a href="#" id="del"></a></div>
+                  <div class="icon icon_tai"></div>
+                </div>
+                <div class="country_item">Вьетнам
+                  <div class="del"><a href="#" id="del"></a></div>
+                  <div class="icon icon_viet"></div>
+                </div>
+                <div class="country_item">Индонезия
+                  <div class="del"><a href="#" id="del"></a></div>
+                  <div class="icon icon_ind"></div>
+                </div>
+              </div>
+            </div>
+            <div class="choise clearfix">
+              <div class="title choise_form">
+                <label>Дата вылета <br>
+                  <input class="choise_form_input date datepicker-here" type="text" data-range="true" data-multiple-dates-separator=" - " data-date-format="d MM D">
+                </label>
+              </div>
+              <div class="title choise_form time">
+                <label>На сколько <br>
+                  <select class="choise_form_input">
+                    <option>1-3 ночи</option>
+                    <option>7-14 ночей</option>
+                    <option>15-21 ночей</option>
+                    <option>21 и больше</option>
+                  </select>
+                </label>
+              </div>
+              <div class="title choise_form guest">
+                <label>Количество гостей <br>
+                  <select class="choise_form_input">
+                    <option>1 взрослый</option>
+                    <option>2 взрослых</option>
+                    <option>2 взрослых, 1 ребенок</option>
+                    <option>2 взрослых, 2 ребенка</option>
+                  </select>
+                </label>
+              </div>
+              <div class="title choise_form price">
+                <label>Стоимость тура <br>
+                  <select class="choise_form_input choise_form_input_date">
+                    <option>10 000 Р - 20 000 Р</option>
+                    <option>20 000 Р - 30 000 Р</option>
+                    <option>30 000 Р - 50 000 Р</option>
+                    <option>50 000 Р - 300 000 Р</option>
+                  </select>
+                </label>
+              </div>
+              <div class="title choise_form rating">
+                <label>Категории отелей от <br>
+                  <select class="choise_form_input" id="example">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </label>
+              </div>
+              <div class="title choise_form top">
+                <p class="top_hotels_title">Рейтинг TopHotels <br></p>
+                <div class="top_hotels">
+                  <p> <a id="top_hotels" href="#">Не ниже</a><span id="contentSlider"></span></p>
+                  <div class="top_hotels_icon"></div>
+                </div>
+                <div class="top_hotels_block">
+                  <div id="slider"></div>
+                </div>
+              </div>
+              <div class="title choise_form type">
+                <label>Тип питания <br>
+                  <select class="choise_form_input">
+                    <option>Любой</option>
+                    <option>Все включено</option>
+                  </select>
+                </label>
+              </div>
+              <div class="title choise_form">
+                <label>Расположение <br>
+                  <select class="choise_form_input">
+                    <option>Пляжные, 1-ая линия</option>
+                    <option>Пляжные, 2-ая линия</option>
+                  </select>
+                </label>
+              </div>
+              <div class="del_button title">
+                <div class="del_red"></div><a class="reset" href="#">Удалить подборку</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="clearfix">
+      <div class="footer_item">
+        <h2>ТУРИСТИЧЕСКИЙ ПРОЕКТ</h2>
+        <p>Москва, 1-ый Щипковский переулок, д.1</p>
+        <p><a class="dashed" href="#">Показать на карте</a></p>
+      </div>
+      <div class="footer_item">
+        <p>Время работы Офиса:</p>
+        <p>Будни 10:00 - 21:00</p>
+        <p>Выходные и праздники 11:00 - 17:00</p>
+      </div>
+      <div class="footer_item contact">
+        <p>+7 495 585 55 55</p>
+        <p><a class="dashed" href="#">Обратная связь</a></p>
+      </div>
+      <div class="footer_item">
+        <ul class="social">
+          <li class="vk social_icon"><a href="#">Вконтакте</a></li>
+          <li class="fb social_icon"><a href="#">Facebook</a></li>
+          <li class="inst social_icon"><a href="#">Instagram</a></li>
+          <li class="ok social_icon"><a href="#">Одноклассники</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="develop">
+      <p>Разрабтано командой TourAdmin &#169; 2017</p>
+    </div>
+  </body>
 </html>
