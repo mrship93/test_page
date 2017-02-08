@@ -1,0 +1,619 @@
+body {
+	font-family:OpenSans,Arial,sans-serif;
+}
+
+select, option {
+	cursor:pointer;
+}
+
+.clearfix:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+.header {
+	width:100%;
+	height:50px;
+	background-image:linear-gradient(to right, #008CD7, #006BC9);
+}
+
+.nav {
+	width:80%;
+	margin:0 auto;
+}
+
+.nav ul {
+	padding-top:1%;
+}
+
+.nav ul li {
+	vertical-align:middle;
+	display:inline-block;
+	margin: -1% 5% 0 0;
+}
+
+.nav ul li:first-child {
+	margin-top:0.1%;
+}
+
+.nav ul li a {
+	
+	color:#fff;
+	font-size:1em;
+	transition:text-shadow 0.3s;
+	text-decoration:none;
+}
+
+.nav ul li a:hover {
+	text-shadow:0 0 .65px #fff, 0 0 .65px #fff;
+
+}
+
+
+main {
+	background-color:#F2F2F2;
+	padding-bottom:10%;
+}
+
+.contain {
+	width:70%;
+	margin:0 auto;
+}
+
+.contain h1 {
+	font-size:24px;
+	
+	color:#2F2F2F;
+	padding: 5% 0 5% 1%;
+}
+
+.form {
+	
+	width:100%;
+	background-color:white;
+}
+
+.form ul {
+	border-bottom:1px solid lightgray;
+	height:55px;
+}
+
+.form ul li {
+	display:inline-block;
+	margin: 20px 20px 0 15px;
+
+}
+
+.form ul li a {
+	font-size:1em;
+	color:#bdbdbd;
+	text-decoration:none;
+	text-transform:uppercase;
+	transition:color 0.3s;
+	 padding-bottom: 15px;
+    display: inline-block;
+	
+}
+
+.form ul li:last-child{
+	background:url(../img/plus.jpg) no-repeat left top;
+}
+
+.form ul li:last-child a {
+	color:#009DDE;
+	margin-left:20px;
+}
+
+
+.form ul li:not(:last-child) a:hover {
+	border-bottom:3px solid #009DDE;
+	color:#009DDE;
+}
+
+
+.title {
+	float:left;
+	margin-top:30px;
+	margin-left:15px;
+}
+
+.title label {
+	color:#bdbdbd;
+	font-size:12px;
+	margin-left:15px;
+}
+
+.city_input {
+	width:220px;
+	height:50px;
+	padding:15px;
+	margin:0;
+	border:1px solid lightgray;
+	margin-top:15px;
+	font-size:20px;
+	position:relative;
+}
+
+.our_city {
+	position:relative;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	 -webkit-appearance: none;
+	background:url(../img/del.png);
+	width:14px;
+	height:14px;
+	cursor:pointer;
+}
+
+.title_input {
+	height:18px;
+	width:188px;
+}
+
+.btn {
+	background-color:#FF8F38;
+	height:50px;
+	width:300px;
+	    border-radius: 5px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+.btn a {
+	color:white;
+	text-decoration:none;
+	font-size:20px;
+	display:block;
+
+    height: 100%;
+    padding: 15px;
+}
+
+.arrow {
+	background:url(../img/arrow.png) no-repeat;
+	position:absolute;
+	top:37%;
+	right:10%;
+	width:17px;
+	height:17px;
+}
+
+.title_country {
+	color:#bdbdbd;
+	font-size:12px;
+	margin-left:30px;
+	margin-top:30px;
+}
+
+.country {
+	width:97%;
+	height:100px;
+	margin:10px auto;
+	border:1px solid lightgray;
+	border-radius:2px;
+}
+
+.country p {
+	font-size:1em;
+	color:black;
+	padding:20px;
+}
+
+.country_item {
+	background-color: #F2F2F2;
+    border-radius: 20px;
+    float: left;
+    width: 120px;
+    height: 15px;
+    margin-left: 20px;
+    padding: 10px 0 10px 40px;
+    position:relative;
+    
+}
+
+.del {
+	position:absolute;
+	background:url(../img/del.png) no-repeat;
+	width:17px;
+	height:17px;
+	top:30%;
+	right:10%;
+}
+
+.del a {
+	display:block;
+	height:17px;
+}
+
+.icon {
+	background:url(../img/icon.png) no-repeat;
+	position:absolute;
+	width:15px;
+	height:15px;
+	top:30%;
+	left:10%
+}
+
+.icon_viet{
+	background-position:-23px 0;
+}
+
+.icon_ind{
+	background-position:-43px 0;
+}
+
+.add_btn {
+	width:97%;
+	margin:0 auto;
+	position:relative;
+}
+
+.add_reg {
+	margin-left:20px;
+	margin-top:25px;
+	border:1px solid #009DDE;
+	background-color:white;
+	color:#009DDE;
+	height:35px;
+	border-radius:20px;
+	width:175px;
+	cursor:pointer;
+}
+
+.add_country {
+	
+	margin-left:10px;
+	margin-top:25px;
+	border:1px solid #009DDE;
+	background-color:#009DDE;
+	color:white;
+	height:35px;
+	border-radius:20px;
+	width:175px;
+	cursor:pointer;
+}
+
+.choise {
+	padding-bottom:15px;
+}
+
+.choise_form {
+	position:relative;
+	
+}
+
+.choise_form:before{
+	content:"";
+	position:absolute;
+	height:45px;
+	background-color:white;
+	right:2px;
+	bottom:2px;
+	width:20px;
+}
+
+.rating:before{
+	height:35px;
+	bottom:20px;
+}
+
+.choise_form:not(:first-child){
+	margin-left:0px;
+}
+
+.choise_form_input {
+	    width: 100%;
+    height: 50px;
+    padding: 15px;
+    margin: 0;
+    border: 1px solid lightgray;
+    margin-top: 15px;
+   
+    font-size:1.2em;
+}
+
+input[type=date]{
+	height:18px;
+}
+
+.rating {
+	width:160px;
+	
+	margin-left:15px;
+	
+}
+
+.title_rating {
+	color:#bdbdbd;
+	font-size:12px;
+	margin-left:30px;
+	margin-bottom:10px;
+}
+
+.top{
+		width:17%;
+	
+	
+	
+}
+
+.date{
+	width:230px;
+	height:18px;
+}
+
+.time{
+	width:19%;
+}
+
+.guest{
+	width:22%;
+}
+
+.price{
+	width:23%;
+}
+
+.type {
+	width:15%;
+}
+
+.choise_form:nth-child(5){
+	margin-left:15px;
+}
+
+.del_button {
+	   
+    height: 50px;
+    width: 20%;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 60px;
+        padding: 15px 1px 1px 1px;
+        position:relative;
+}
+
+.del_button a {
+	color:#FF5656;
+	text-decoration:none;
+	font-size:1.2em;
+}
+
+.del_red {
+	position:absolute;
+	background:url(../img/del_red.png) no-repeat;
+	width:17px;
+	height:17px;
+	 top: 15px;
+    left: -25px;
+}
+
+footer {
+	
+	width:1200px;
+	margin:0 auto;
+}
+
+.footer_item {
+	width:270px;
+	float:left;
+	color:#8E8E8A;
+	font-size:0.9em;
+	padding-top:10%;
+	margin-left:30px;
+}
+
+.footer_item p {
+	margin-top:20px;
+}
+
+.footer_item ul {
+	margin-top:20px;
+}
+
+.footer_item ul li {
+	margin-top:20px;
+}
+
+.footer_item h2 {
+	font-weight:bold;
+	color:black;
+}
+
+.contact {
+	text-align:center;
+}
+
+.dashed {
+	border-bottom:1px dashed #8E8E8A;
+}
+
+.footer_item a {
+	text-decoration:none;
+	color:#8E8E8A;
+
+}
+
+.develop {
+	text-align:right;
+	color:#8E8E8A;
+	font-size:0.9em;
+	margin: 50px 200px 50px 30px;
+}
+
+
+.social_icon{
+	background:url(../img/social.png) no-repeat;
+	width:20px;
+	height:15px;
+}
+
+.social_icon:hover{
+	background:url(../img/social_hover.png) no-repeat;
+}
+
+.social li a{
+	padding-left:25px;
+}
+
+.social li a:hover{
+	color:#FF923E;
+}
+
+.vk {
+	background-position:-23px 0;
+}
+
+.vk:hover{
+	background-position:-23px 0;
+}
+
+.fb {
+	background-position:-63px 0;
+}
+
+.fb:hover {
+	background-position:-63px 0;
+}
+
+.inst {
+	background-position:-43px 0;
+}
+
+.inst:hover {
+	background-position:-43px 0;
+}
+
+.ok {
+	background-position:-5px 0;
+}
+
+
+
+.ok:hover {
+	background-position:-5px 0;
+}
+
+
+.add_country_block {
+	width:200px;
+	height:200px;
+	background:white;
+	display:none;
+	position:absolute;
+	left: 400px;
+    top: 0;
+    z-index: 20;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.add_country_block .country_item {
+	margin-top:20px;
+	display:block;
+}
+
+.add_reg_block {
+	width:200px;
+	height:200px;
+	background:white;
+	display:none;
+	position:absolute;
+	left: 200px;
+    top: 0;
+    z-index: 20;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+
+.add_reg_block .country_item{
+	margin-top:20px;
+}
+
+.country_item a{
+	text-decoration:none;
+	color:black;
+}
+
+select option {
+	cursor:pointer;
+}
+
+.top_hotels_title {
+	    color: #bdbdbd;
+    font-size: 12px;
+    margin-left: 15px;
+    padding-top: 3px;
+}
+
+.top_hotels {
+	border:1px solid lightgray;
+	height: 48px;
+    margin-top: 16px;
+    position:relative;
+}
+
+.top_hotels p {
+	padding:15px;
+}
+
+#top_hotels {
+	color:black;
+	text-decoration:none;
+}
+
+.top_hotels_block {
+	position:absolute;
+	width:100%;
+	height:40px;
+	
+	background: white;
+    display: none;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+#slider-zaim{
+	margin-top:12px;
+}
+
+#contentSlider {
+	font-size: 1.1em;
+    font-weight: bold;
+    width: 20px;
+    border: none;
+    padding-left: 40px;
+
+}
+
+.top_hotels_green{
+	color:green;
+	background-position: -42px 0px!important;
+}
+
+.top_hotels_red{
+	color:red;
+	background-position: 0px 0px!important;
+}
+
+.top_hotels_yellow{
+	color:#dada00;
+	background-position: -22px 0px!important;
+}
+
+.top_hotels_icon {
+	position:absolute;
+	width: 17px;
+    height: 15px;
+    background: url(../img/top_hotels.png) no-repeat;
+    top: 18px;
+    right: 50px;
+}
+
+div#slider {
+	margin-top:10px;
+}

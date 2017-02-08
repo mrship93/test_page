@@ -1,0 +1,59 @@
+﻿
+
+/* Телефоны */
+@media (max-width: 1280px) {
+	.contain {
+		width:95%;
+	}
+	footer {
+		width:1000px;
+	}
+	.footer_item {
+		width:230px;
+		margin-left:20px;
+	}
+}
+
+@media (min-width: 1600px) {
+	.contain {
+		width:65%;
+	}
+	.nav ul li:first-child {
+		margin-top:-8px;
+	}
+}
+
+@media (max-width: 960px) {
+	.contain{width:100%;}
+	.nav{width:100%;}
+	.form ul li {margin-right:0px;}
+	.btn {margin-left:10px;}
+	.del_button{width:21%;margin-left:5px;}
+	.del_red{background:none;}
+	footer{width:800px;}
+	.footer_item{width:180px;}
+}
+
+
+
+@media (min-width: 320px) and (max-width:680px) {
+	.header{height:auto;text-align:center;}
+	.nav ul li {display:block; margin:5%; padding-bottom:5%;}
+	.contain{text-align:center;}
+	.form ul {height:auto;}
+	.form ul li {
+		display:block;margin:5%;padding:3% 0 3% 0;
+	}
+	.form ul li:last-child{background:none;}
+	.title {float:none;margin-left:0px;}
+	.title_input{width:100%;}
+	.city_input{width:100%;}
+	.date, .time, .guest, .price, .rating, .top, .type, .del_button {width:100%;}
+	.choise_form:nth-child(5){margin-left:0px;}
+	footer{width:100%;}
+	.contact{text-align:left;}
+	.develop{margin:30px 0 0 0;text-align:center;}
+	.city_input{padding:15px 0 15px 0;}
+	.choise_form_input{padding:15px 0 15px 0;}
+	.btn{width:100%;}
+}
